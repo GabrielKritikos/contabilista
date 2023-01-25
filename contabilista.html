@@ -196,7 +196,7 @@
 									<div class="input-group spacer">
 										<input type="text" ng-model="filial" name="filial" id="filial" placeholder="Informe a Filial da venda ou orçamento..." uib-typeahead="retorno.codExterno + ' - ' + retorno.nome + ' in getFilialERP($viewValue)" typeahead-loading="loadingFilial" typeahead-no-results="noResults"  typeahead-on-select="selecionarFilial($item, $model, $label)" class="form-control" autocomplete="off" typeahead-min-length="2" >
 										<span class="input-group-addon" style="cursor: pointer;"></span>
-									</div>
+									</div> 
 								</div>
 								<div class="col-sm-6 spacer">
 									<label for="nomeCliente">Cliente <span style="color: red;" ng-show="cadastroPedido.frmCliente.$error.required">*</span></label>
