@@ -206,6 +206,13 @@
 									</div>
 								</div>
 								<div class="col-sm-6 spacer">
+									<label for="codTns">Transação</label>
+									<div class="input-group spacer">
+										<input type="text" ng-model="tns" name="tns" id="tns" placeholder="Informe a Transação da venda ou orçamento..." uib-typeahead="retorno.codExterno + ' - ' + retorno.nome + ' in getTnsERP($viewValue)" typeahead-loading="loadingTns" typeahead-no-results="noResults"  typeahead-on-select="selecionarTns($item, $model, $label)" class="form-control" autocomplete="off" typeahead-min-length="2" >
+										<span class="input-group-addon" style="cursor: pointer;"></span>
+									</div> 
+								</div>
+								<div class="col-sm-6 spacer">
 									<label for="nomeCliente">Endereço de entrega</label>
 									<div class="input-group spacer">
 										<input type="text" ng-model="frmEndEntrega" name="frmEndEntrega" placeholder="Informe o endereço de entrega" uib-typeahead="ee.endereco + ', ' + ee.numero + ', ' + ee.bairro + ', ' + ee.cidade + ', ' + ee.uf + ', ' + ee.cep + ', ' + ee.complemento for ee in getEndEntrega($viewValue)" typeahead-loading="loadingEE" typeahead-no-results="noResultsEE"  typeahead-on-select="onSelectEE($item, $model, $label)" class="form-control"  autocomplete="off" typeahead-min-length="0">
