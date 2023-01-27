@@ -194,7 +194,7 @@
 								<div class="col-sm-6 spacer">
 									<label for="codFil">Filial</label>
 									<div class="input-group spacer">
-										<input type="text" ng-model="filial" name="filial" id="filial" placeholder="Informe a Filial da venda ou orçamento..." uib-typeahead="retorno.codExterno + ' - ' + retorno.nome + ' in getFilialERP($viewValue)" typeahead-loading="loadingFilial" typeahead-no-results="noResults"  typeahead-on-select="selecionarFilial($item, $model, $label)" class="form-control" autocomplete="off" typeahead-min-length="2" >
+										<input type="text" ng-model="filial" name="filial" id="filial" placeholder="Informe a Filial da venda ou orçamento..."  class="form-control" autocomplete="off" typeahead-min-length="2" >
 										<span class="input-group-addon" style="cursor: pointer;"></span>
 									</div> 
 								</div>
@@ -208,7 +208,7 @@
 								<div class="col-sm-6 spacer">
 									<label for="codTns">Transação</label>
 									<div class="input-group spacer">
-										<input type="text" ng-model="tns" name="tns" id="tns" placeholder="Informe a Transação da venda ou orçamento..." uib-typeahead="retorno.codExterno + ' - ' + retorno.nome + ' in getTnsERP($viewValue)" typeahead-loading="loadingTns" typeahead-no-results="noResults"  typeahead-on-select="selecionarTns($item, $model, $label)" class="form-control" autocomplete="off" typeahead-min-length="2" >
+										<input type="text" ng-model="tns" name="tns" id="tns" placeholder="Informe a Transação da venda ou orçamento..."  class="form-control" autocomplete="off" typeahead-min-length="2" >
 										<span class="input-group-addon" style="cursor: pointer;"></span>
 									</div> 
 								</div>
@@ -449,6 +449,7 @@
 <!-- Scripts importados -->	
 
 <script>
+	consonle.log("Commit1");
 var dadosUserLogado = parent.dadosUserLogadoPersonalizado();	
 
 angular
